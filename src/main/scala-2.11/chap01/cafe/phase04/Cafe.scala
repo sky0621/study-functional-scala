@@ -13,12 +13,11 @@ class Cafe {
     (cup, Charge(cc, cup.price))
   }
 
-  def buyCoffees(cc: CreditCard, n: Int): (List[Coffee], Charge) = {
+//  def buyCoffees(cc: CreditCard, n: Int): (List[Coffee], Charge) = {
     // buyCoffee の結果のコピーを n 個含んだ List を生成
-    val purchases: List[(Coffee, Charge)] = List.fill(n)(buyCoffee(cc))
+//    val purchases: List[(Coffee, Charge)] = List.fill(n)(buyCoffee(cc))
 //    val (coffees, charge) = purchases.unzip(coffees, charge.reduce())
 //    (coffees, charge)
-    Nil
-  }
+//  }
 
 }
