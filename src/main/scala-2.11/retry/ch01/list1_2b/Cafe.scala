@@ -4,7 +4,7 @@ package retry.ch01.list1_2b
   * Created by SS on 2017/08/25.
   */
 class Cafe {
-  def buyCoffee(cc: CreditCard, p: Payments): (Coffee ,Charge)= {
+  def buyCoffee(cc: CreditCard, p: Payments): (Coffee, Charge) = {
     val cup = new Coffee()
 
     // 副作用を起こしうるものを返り値にする
@@ -27,5 +27,4 @@ class Payments {
 }
 
 case class Charge(cc: CreditCard, amount: Double) {
-
 }
